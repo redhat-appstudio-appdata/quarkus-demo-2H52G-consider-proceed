@@ -1,0 +1,17 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: quarkus-demo
+spec:
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/redhat-user-workloads/jmayorgarh-tenant/quarkus-demo/quarkus-demo@sha256:31a44880059a96131547dcdca45b516ec967fc7a2cfe253c5ee1473d9acaa8d2
+        name: my-java-quarkus
+        resources: {}
+status: {}
